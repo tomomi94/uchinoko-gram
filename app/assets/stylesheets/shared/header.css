@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; 
+  color: #333333;
+}
+
+.top-page-header{
+  padding: 16px;
+  box-shadow: 0 0 15px #e2e6ef;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.search-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  width: 30vw;
+  height: 6vh;
+  display: flex;
+  margin: 0 0 2px 20px;
+}
+
+.search-button {
+  border: none;
+  background-color: white;
+}
+
+.search-form>.input-box {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
+}
+
+.input-box {
+  border: 1px solid #9c6a5296;
+  font-size: 13px;
+}
+
+img.search-icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 9px;
+  border: none;
+}
+
+.uhinoko-icon {
+  display: block;
+  height: 9vh;
+  width: 13vw;
+}
+
+.nav {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 45%;
+  padding: 1vh 0;
+}
+
+.lists-right1, .lists-right2 {
+  list-style: none;
+  display: flex;
+}
+
+.user-accountname, .login {
+  margin-right: 4vw;
+  margin-left: 4vw;
+  border-bottom: solid 1px #9c6a5296;  
+}
+
+.logout, .category-list, .sign-up {
+  border-bottom: solid 1px #9c6a5296;
+}
