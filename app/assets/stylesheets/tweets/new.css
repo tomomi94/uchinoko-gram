@@ -17,31 +17,30 @@ a:hover{
   flex-direction: column;
   min-width: 500px;
   font-family: "游ゴシック", "YuGothic";
-
 }
 
 .contents-row{
   background-color: #fdf5e6;
-  width: 60vw;
+  width: 55vw;
   min-width: 450px;
-  padding: 10vh 8vw 5vh;
+  margin: 30px 0;
+  padding: 10vh 5vw 5vh;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
 }
 
 .tweets-sell-title {
   font-size: 20px;
-  font-weight: bold;
   margin-bottom: 60px;
   text-align: center;
   color:#9c6952;
   padding: 0.5em 0;
   border-top: solid 3px #9c6952;
   border-bottom: solid 3px #9c6952;
+  font-weight: bold;
 }
 
 /*共通*/
 .weight-bold-text {
-  font-weight: bold;
   min-width: 170px;
   margin-top: 20px;
   display: flex;
@@ -65,24 +64,23 @@ a:hover{
 
 .indispensable {
   color: #808080;
+  font-weight: bold;
 }
 
 /*投稿画像*/
-.click-upload>p {
-  margin-bottom: 20px;
+.img-upload {
+  display: flex;
+  justify-content: space-between;
 }
 
-.click-upload {
-  display: block;
-  color: #808080;
-  font-weight: lighter;
+#tweet-image {
+  width: 280px;
+  margin: 0 0 0 auto;
+  border: none;
+  outline: none;
 }
 
 /*詳細*/
-.new-tweets {
-  padding: 2vh 0;
-}
-
 .tweets-text {
   width: 100%;
   height: 200px;
@@ -98,9 +96,17 @@ a:hover{
 
 /*投稿ボタン*/
 .sell-btn-contents {
-  width: 100%;
   text-align: center;
-  display: block;
+}
+
+.sell-btn {
+  background: #9c6952;
+  border: 1px solid #9c6952;
+  color: #fff;
+  width: 400px;
+  height: 50px;
+  font-size: 14px;
+  padding: 0 140px;
 }
 
 form input[type="submit"] {
@@ -109,9 +115,7 @@ form input[type="submit"] {
   color: #fff;
   border: 0;
   font-size: 15px;
-  width: 70%;
-  height: 40px;
-  margin: 40px 15px 0 0;
+  margin: 40px 0 0 0;
   font-weight: bold;
 }
 
@@ -120,7 +124,11 @@ form input[type="submit"]:hover {
 }
 
 .back-btn {
-  margin-top: 10px;
   color: #808080;
+  font-size: 10px;
   font-weight: bold;
+  padding: 30px 5px;
+  margin-top: 45px;
+  float: right;
+  text-decoration: none;
 }
