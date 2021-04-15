@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   def index
-    @tweets = Tweet.order("created_at DESC")
+    @tweets = Tweet.order('created_at DESC')
   end
 
   def new
@@ -16,5 +16,4 @@ class TweetsController < ApplicationController
   def tweet_params
     params.require(:tweet).permit(:accountname, :image, :text, :pet_type_id, :age, :gender_id).merge(user_id: current_user.id)
   end
-
 end
