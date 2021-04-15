@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color : #9c6a5296;
+}
+
+.main {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+  font-family: "游ゴシック", "YuGothic";
+
+}
+
+.contents-row{
+  background-color: #fdf5e6;
+  width: 60vw;
+  min-width: 450px;
+  padding: 10vh 8vw 5vh;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+}
+
+.tweets-sell-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  color:#9c6952;
+  padding: 0.5em 0;
+  border-top: solid 3px #9c6952;
+  border-bottom: solid 3px #9c6952;
+}
+
+/*共通*/
+.weight-bold-text {
+  font-weight: bold;
+  min-width: 170px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-box-pet, .select-box-gender, .tweets-text, .age-text {
+  border: none;
+  border-bottom: 2px solid  #9c6952;
+  border-radius: 5px;
+}
+
+.select-box-pet, .select-box-gender, .age-text {
+  width: 30%;
+  height: 40px;
+  margin: 20px 0 0 30px;
+  padding: 5px;
+  display: block;
+  color: #808080;
+}
+
+.indispensable {
+  color: #808080;
+}
+
+/*投稿画像*/
+.click-upload>p {
+  margin-bottom: 20px;
+}
+
+.click-upload {
+  display: block;
+  color: #808080;
+  font-weight: lighter;
+}
+
+/*詳細*/
+.new-tweets {
+  padding: 2vh 0;
+}
+
+.tweets-text {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  margin-top: 15px;
+  display: block;
+}
+
+/*年齢*/
+.age-text {
+  text-align: center;
+}
+
+/*投稿ボタン*/
+.sell-btn-contents {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+form input[type="submit"] {
+  background-color: #9c6952;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  width: 70%;
+  height: 40px;
+  margin: 40px 15px 0 0;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #9c6a5296;
+}
+
+.back-btn {
+  margin-top: 10px;
+  color: #808080;
+  font-weight: bold;
+}
