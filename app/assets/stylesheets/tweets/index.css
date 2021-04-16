@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: "游ゴシック", "YuGothic";
+}
+
+/* 画面上部の帯部分 */
+.top-image {
+  width: 100%;
+}
+
+/* 新規ツイート */
+.tweet-contents {
+  width: 100%;
+  margin: 20px;
+}
+
+.title {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.tweet-lists {
+  width: 100vw;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tweet-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+/*投稿ボタン*/
+.tweet-btn {
+  width: 120px;
+  background: #9c6952;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 10px;
+}
+.tweet-btn-text {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+
+.tweet-btn-icon {
+  width: 50%;
+}
