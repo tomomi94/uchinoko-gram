@@ -1,0 +1,45 @@
+<%# ヘッター %>
+<%= render "shared/header" %>
+
+<%# 詳細 %>
+<div class="tweet-show">
+  <div class="tweet-box">
+    <%= image_tag @tweet.image, class:"tweet-box-img" %>
+
+    <div class="tweet-explain-box1">
+      <div class="tweet-text">
+        <%= @tweet.text %>
+      </div>
+      <div class="tweet-time">
+        <%= @tweet.created_at %>
+      </div>
+    </div>
+  </div>
+
+  <div class="tweet-explain-box2">
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-tweet">投稿者</th>
+          <td class="detail-value"><%= link_to @tweet.user.accountname %></td>
+        </tr>
+          <tr>
+          <th class="detail-tweet">ペットの種類</th>
+          <td class="detail-value"><%= @tweet.pet_type.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-tweet">性別</th>
+          <td class="detail-value"><%= @tweet.gender.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-tweet">年齢</th>
+          <td class="detail-value"><%= @tweet.age %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<%# フッター %>
+<%= render "shared/footer" %>
