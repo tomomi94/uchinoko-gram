@@ -38,11 +38,15 @@
       </tbody>
     </table>
 
+  <div class="tweet-explain-box3">
   <% if user_signed_in? %>
     <% if current_user.id == @tweet.user_id %>
       <%= link_to "削除", tweet_path(@tweet.id), method: :delete, class:"tweet-destroy" %>
+      <%= link_to "編集", edit_tweet_path(@tweet.id), method: :get, class:"tweet-edit" %>
     <% end %>
   <% end %>
+  </div>
+  <%=link_to '>>TOPページ', root_path, class:"back-btn" %>
   </div>
 
 </div>
