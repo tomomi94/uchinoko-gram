@@ -91,44 +91,29 @@ a:hover{
 
 /*年齢*/
 .age-text {
-  text-align: center;
+  padding: 10px;
 }
 
 /*投稿ボタン*/
 .sell-btn-contents {
-  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sell-btn {
   background: #9c6952;
   border: 1px solid #9c6952;
-  color: #fff;
-  width: 400px;
-  height: 50px;
-  font-size: 14px;
-  padding: 0 140px;
-}
-
-form input[type="submit"] {
-  background-color: #9c6952;
-  border-radius: 5px;
-  color: #fff;
-  border: 0;
-  font-size: 15px;
-  margin: 40px 0 0 0;
   font-weight: bold;
-}
-
-form input[type="submit"]:hover {
-  background-color: #9c6a5296;
+  flex-basis: 60%;
 }
 
 .back-btn {
   color: #808080;
+  flex-basis: 20%;
   font-size: 10px;
-  font-weight: bold;
-  padding: 30px 5px;
-  margin-top: 45px;
-  float: right;
-  text-decoration: none;
 }
+
+

@@ -1,0 +1,63 @@
+<%# cssは投稿詳細のものを併用。
+app/assets/stylesheets/tweets/new.css %>
+
+<%# ヘッター %>
+<%= render "shared/header" %>
+
+<%# 詳細 %>
+<div class='main'>
+
+  <div class="contents-row">
+    <h2 class="tweets-sell-title">編集する</h2>
+    <%= form_with(model: @tweet, local: true ) do |f| %>
+
+    <%# 共通エラー文設定する %>
+
+    <%# 投稿画像 %>
+    <div class="img-upload">
+      <span class="indispensable">＊アップロード</span>
+      <div class="click-upload">
+        <%= f.file_field :image, id:"tweet-image" %>
+      </div>
+    </div>
+    <%# /投稿画像 %>
+
+    <%# 投稿内容の詳細 %>
+    <div class="new-tweets">
+      <div class="text">
+        <span class="indispensable">＊詳細</span>
+      </div>
+      <%= f.text_area :text, class:"tweets-text", id:"tweetname", maxlength:"500" %>
+    </div>
+    <%# /投稿内容の詳細 %>
+    <div class="tweet-detail">
+      <div class="form">
+        <div class="weight-bold-text">
+          <span class="indispensable">＊ペット</span>
+        <%= f.collection_select(:pet_type_id, PetType.all, :id, :name, {}, {class:"select-box-pet", id:"tweet-pet-type"}) %>
+        </div>
+        <div class="weight-bold-text">
+          <span class="indispensable">＊性別（任意）</span>
+        <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box-gender", id:"tweet-gender"}) %>
+        </div>
+        <div class="weight-bold-text">
+          <span class="indispensable">＊年齢</span>
+        <%= f.text_area :age, class:"age-text", id:"age-name", maxlength:"3" %>
+        </div>
+      </div>
+    </div>
+    <%# /投稿内容の詳細 %>
+
+    <%# ボタン %>
+    <div class="sell-btn-contents">
+      <%= f.submit "保存" ,class:"sell-btn" %>
+      <%=link_to '>>TOPページ', root_path, class:"back-btn" %>
+    </div>
+    <%# /ボタン %>
+  </div>
+  <% end %>
+</div>
+
+
+<%# フッター %>
+<%# <%= render "shared/footer" %> %>
