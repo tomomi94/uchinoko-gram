@@ -1,0 +1,70 @@
+/* 全体 */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color : #9c6a5296;
+}
+
+.tweet-show {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0;
+  color: #696969;
+}
+
+/* 画像、テキスト */
+.tweet-explain-box1 {
+  width: 25vw;
+  margin:2em 0;
+  position: relative;
+}
+
+.tweet-box {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* 画像 */
+.tweet-box-img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* 画像横のテキスト */
+.tweet-text {
+  padding: 30px 20px;
+}
+
+.tweet-time {
+  padding: 10px;
+  font-size: 10px;
+}
+
+/* 投稿詳細のテーブル */
+.tweet-explain-box2 {
+  /* border: 2px solid lightsteelblue; */
+  width: 40%;
+  padding: 20px;
+  font-size: 10px;
+  align: left;
+  margin-left: 10%;
+}
+
+table{
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,table td{
+  padding: 10px 0;
+  border-bottom: 2px solid #9c6a5296;
+}

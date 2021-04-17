@@ -13,7 +13,7 @@
 
       <% @tweets.each do |tweet| %>
       <li class='list'>
-        <%= link_to tweets_path(tweet.id) do %>
+        <%= link_to tweet_path(tweet.id) do %>
         <div class='tweet-img-content'>
           <%= image_tag tweet.image, class: "tweet-img" %>
         </div>
