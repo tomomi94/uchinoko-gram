@@ -37,6 +37,12 @@
         </tr>
       </tbody>
     </table>
+
+  <% if user_signed_in? %>
+    <% if current_user.id == @tweet.user_id %>
+      <%= link_to "削除", tweet_path(@tweet.id), method: :delete, class:"tweet-destroy" %>
+    <% end %>
+  <% end %>
   </div>
 
 </div>
