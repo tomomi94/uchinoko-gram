@@ -50,12 +50,14 @@ a:hover{
 
 /* 投稿詳細のテーブル */
 .tweet-explain-box2 {
-  /* border: 2px solid lightsteelblue; */
   width: 40%;
   padding: 20px;
   font-size: 10px;
   align: left;
   margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 table{
@@ -68,3 +70,18 @@ table th,table td{
   padding: 10px 0;
   border-bottom: 2px solid #9c6a5296;
 }
+
+/* 削除ボタン */
+.tweet-destroy  {
+  border: none;
+  border-bottom: 2px solid #9c6a5296;
+  border-radius: 5px;
+  width: 20%;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.tweet-destroy :active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}  
