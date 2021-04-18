@@ -36,6 +36,7 @@ a:hover{
 .tweet-box-img {
   max-width: 50%;
   height: auto;
+  object-fit: contain;
 }
 
 /* 画像横のテキスト */
