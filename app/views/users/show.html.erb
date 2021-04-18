@@ -5,7 +5,9 @@
 
 <%# 投稿した画像一覧 %>
   <div class='mytweet-contents'>
-    <h2 class='title'>MY PAGE</h2>
+    <h2 class='title'>
+      <%= @accountname %>さんの投稿一覧
+    </h2>
     <ul class='mytweet-lists'>
       <% @tweets.each do |tweet| %>
         <%= link_to tweet_path(tweet.id) do %>
