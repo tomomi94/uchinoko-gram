@@ -21,7 +21,7 @@
       <tbody>
         <tr>
           <th class="detail-tweet">投稿者</th>
-          <td class="detail-value"><%= link_to @tweet.user.accountname %></td>
+          <td class="detail-value"><%= link_to @tweet.user.accountname, user_path(@tweet.user) %></td>
         </tr>
           <tr>
           <th class="detail-tweet">ペットの種類</th>
